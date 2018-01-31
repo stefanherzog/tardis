@@ -1,8 +1,6 @@
 #step 1: log in to Tardis
 
-#step 2: download the repository
-
-#https://www.dropbox.com/s/0n0to184qjsxfum/social-recommendation.zip?dl=0
+#step 2: download the repository: "git clone git@github.com:dnlbrkc/tardis.git"
 
 
 #step 3: generate jester dataset
@@ -14,7 +12,7 @@ source(path("/jesterDatasets/get_data.R"))
 
 generate_data() #this will download and save the jester dataset using a random seed
 
-#step 4: 
+#step 4:
 
 setwd(path("simulationCode"))
 
