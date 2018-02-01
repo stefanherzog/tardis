@@ -18,7 +18,7 @@ setwd(path("simulationCode"))
 
 #step 5: run simulation job for 1000 repetitions
 
-
+#echo ‘export OMP_NUM_THREADS=1; Rscript jesterBaseline.R $PBS_ARRAYID’ | qsub -d. -t 1-1000 -N baseline
 
 #step 6: once the job is ready, aggregate individual simulation runs using the following code:
 
