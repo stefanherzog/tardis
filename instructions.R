@@ -1,7 +1,10 @@
 #step 1: log in to Tardis
 
-#step 2: download the repository: "git clone git@github.com:dnlbrkc/tardis.git"
+#step 2: download the repository:
 
+#git clone git@github.com:dnlbrkc/tardis.git"
+
+#install packages: install.packages("rprojroot")
 
 #step 3: generate jester dataset
 
@@ -33,3 +36,8 @@ baseline <- baseline / length(files)
 
 save(baseline,file="baseline.Rdata")
 
+
+#step 7: push results to the repo
+# git add *
+# git commit -m "."
+# git push
