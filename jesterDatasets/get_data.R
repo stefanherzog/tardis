@@ -1,7 +1,7 @@
 generate_data <- function(x){
 
 #Code for obtaining the Jester dataset from Ken Goldberg's website (http://goldberg.berkeley.edu/jester-data/)
-library(gdata)
+library(readxl)
 
 #####################################################
 #Download data from website and save it into a matrix
@@ -21,7 +21,7 @@ download.file(urls[i],temp)
 unzip(zipfile = temp, exdir = temp2)
 
 name <- paste0("jester-data-",i,".xls")
-data[[i]] <- read.xls(file.path(temp2, name))
+data[[i]] <- read_excel(file.path(temp2, name), col_names = FALSE)
 unlink(c(temp, temp2))
 
 

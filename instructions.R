@@ -6,7 +6,7 @@
 
 #install packages:
 
-install.packages("rprojroot")
+install.packages("rprojroot", "readxl")
 
 #step 3: generate jester dataset
 
